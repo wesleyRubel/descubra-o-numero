@@ -1,0 +1,232 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'bebas neue';
+    src: url(../fontes/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'game over';
+    src: url(../fontes/game_over.ttf);
+}
+
+:root {
+    --cor0: #090E73;
+    --cor1: #1540BF;
+    --cor2: #117CD9;
+    --cor3: #DFE9F2;
+    --cor4: #118CD9;
+    --cor5: white;
+    --font-bebas: 'bebas neue';
+    --font-arial: 'Arial';
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor0), var(--cor2));
+    padding: 30px;
+    text-align: center;
+    color: var(--cor5);
+    position: relative;
+}
+
+header>h1 {
+    font-family: var(--font-bebas);
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
+    display: inline-block;
+}
+
+header>p {
+    font-family: var(--font-bebas);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.425);
+}
+
+nav {
+    background-color: var(--cor0);
+    padding: 20px;
+    text-align: center;
+}
+
+nav>a {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    color: var(--cor5);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: var(--font-arial);
+}
+
+nav>a:hover {
+    background-color: var(--cor4);
+    padding: 10px;
+    color: var(--cor3);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+    background-color: var(--cor5);
+    margin-top: 50px;
+    padding: 15px;
+    font-family: var(--font-arial);
+    text-align: justify;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.493);
+}
+
+main>h1 {
+    color: var(--cor1);
+    background-image: linear-gradient(to right, rgba(17, 140, 217, 0.514), #117cd900);
+    padding: 5px;
+}
+
+main>p {
+    color: var(--cor4);
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+
+main h1,
+p {
+    margin-bottom: 20px;
+}
+
+main strong {
+    color: var(--cor1);
+}
+
+.game {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    background-color: var(--cor4);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.466);
+}
+
+.teclado {
+    background-color: var(--cor3);
+    max-width: 223px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.teclado>section {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.teclado input {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.teclado input:hover {
+    background-color: rgba(17, 140, 217, 0.151);
+}
+
+.saida {
+    padding: 15px;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.saida #btApostar,#btLimpar {
+    padding: 5px 10px;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.saida #inNumero {
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.saida h3 {
+    color: var(--cor0);
+    margin-bottom: 10px;
+}
+
+.saida .exibe {
+    display: inline-block;
+    padding: 5px 10px;
+    color: var(--cor0);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.saida .oculta {
+    display: none;
+}
+
+
+footer{
+    background-color: var(--cor0);
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-arial);
+    padding: 10px;
+    text-align: center;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+@media screen and (min-width:735px) {
+    .saida {
+        padding: 15px;
+        background-color: var(--cor3);
+        position: absolute;
+        left: 40%;
+        top: 6%;
+        border-radius: 5px;
+        width: 400px;
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (min-width:451px) {
+    nav>a {
+        display: inline;
+        text-decoration: none;
+        color: var(--cor5);
+        margin-right: 10px;
+        font-weight: bold;
+        font-family: var(--font-arial);
+    }
+
+    nav {
+        background-color: var(--cor0);
+        padding: 20px;
+        text-align: left;
+    }
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Número Sorteado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Desenvolvimento Web</h1>
+        <p>
+            Projetos feitos em HTML, CSS e JavaScript.
+        </p>
+    </header>   
+    <nav>
+       <a href="#">HOME</a>
+       <a href="#">PROJETOS</a>
+       <a href="#">SOBRE NÓS</a>
+       <a href="#">FALE CONOSCO</a>
+    </nav> 
+    <main>
+        <h1>Jogo do descubra o número</h1>
+        <p>
+            Um pequeno jogo feito em <strong>JavaScript</strong> onde o jogador tenta adivinhar um número gerado aleatóriamente pelo navegador. Por meio de uma interface feita com <strong>HTML</strong> e <strong>CSS</strong> o usuário escolhe um número, e ao apertar o botão "Apostar" o script ira receber o número informado pelo usuário e verificar se é igual ao número gerado pelo script. 
+        </p>
+        <div class="game">
+            <div class="teclado">
+                <section id="1">
+                    <input type="button" value="0" id="bt0">
+                    <input type="button" value="1" id="bt1">
+                    <input type="button" value="2" id="bt2">
+                </section>
+                <section id="2">
+                    <input type="button" value="3" id="bt3">
+                    <input type="button" value="4" id="bt4">
+                    <input type="button" value="5" id="bt5">
+                </section>
+                <section id="3">
+                    <input type="button" value="6" id="bt6">
+                    <input type="button" value="7" id="bt7">
+                    <input type="button" value="8" id="bt8">
+                </section>
+                <section id="4">
+                    <input type="button" value="9" id="bt9">
+                </section>
+            </div>
+            <div class="saida">
+                <p>
+                    <input type="button" value="Apostar" id="btApostar">
+                    <input type="text" id="inNumero" placeholder="Número">
+                    <input type="button" value="Limpar" id="btLimpar">
+                </p>
+                <h3>
+                    ERROS: <span id="outErros">0</span>
+                </h3>
+                <h3>
+                    CHANCES: <span id="outChances">6</span>
+                </h3>
+                <h3 id="outDica">
+                    Dica: É um número entre 1 e 100: 
+                </h3>
+                <input type="button" value="Novo Jogo" id="btNovo" class="oculta">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Wesley Kozach Rubel</p>
+    </footer>
+    <script src="js/descubraonumero.js"></script>
+</body>
+</html>
